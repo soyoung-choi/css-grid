@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      max-width: 1080px;
+      margin: 50px auto;
+      font-size: 18px;
+    }
+    
+    h1 {
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    
+    .container {
+      padding: 20px;
+      margin: 0 auto;
+    }
+
+    .wrapper {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 20px;
+    }
+
+    header {
+      grid-column: 1 / 3;
+      text-align: center;
+      border: 1px solid #c64a79;
+      padding: 50px;
+      background: #ffe5ef;
+      color: #c64a79;
+    }
+
+    nav {
+      text-align: center;
+      border: 1px solid #e28733;
+      padding: 50px;
+      background: #ffecdb;
+      color: #e28733;
+      grid-column: 1 / 3;
+    }
+
+    section {
+      text-align: center;
+      border: 1px solid #4cc64a;
+      padding: 50px;
+      background: #e5ffe4;
+      color: #4cc64a;
+    }
+
+    aside {
+      text-align: center;
+      border: 1px solid #4abec6;
+      padding: 50px;
+      background: #eafdff;
+      color: #4abec6;
+    }
+
+    footer {
+      grid-column: 1 / 3;
+      text-align: center;
+      border: 1px solid #393fe2;
+      padding: 50px;
+      background: #eeefff;
+      color: #393fe2;
+    }
+
+    @media (max-width: 1080px) {
+      .wrapper {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>CSS Grid</h1>
+    <div class="wrapper">
+      <header>header</header>
+      <nav>navigation</nav>
+      <section>Lorem ipsum dolor sit amet consectetur adipisicing elit.</section>
+      <aside>aside</aside>
+      <footer>footer</footer>
+    </div>
+    
+  </div>
+</body>
+</html>
